@@ -19,3 +19,7 @@ workspace/
 **/wandb/*
 **/full_datasets/*
 settings.json
+
+weights/
+reproducible_code/
+cropped_faces*
