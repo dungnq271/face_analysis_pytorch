@@ -31,9 +31,9 @@ transform = transforms.Compose(
 )
 
 class Args:
-    race_model = "../../weights/Race/final/model.pth"
-    age_model = "../../weights/Age/final/model.pth"
-    gender_model = "../../weights/Gender/final/model.pth"
+    race_model = "../../weights/Race/final/model_.pth"
+    age_model = "../../weights/Age/final/model_.pth"
+    gender_model = "../../weights/Gender/final/model_.pth"
     net_mode = "ir_se"
     depth = 50
     drop_ratio = 0.4
