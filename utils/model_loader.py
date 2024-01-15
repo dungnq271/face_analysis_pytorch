@@ -53,9 +53,9 @@ def load_state(
     model.load_state_dict(torch.load(path_to_model))
 
     if load_head or not model_only:
-        path_to_head = path_to_model.replace("model_", "head_")
+        path_to_head = path_to_model.replace("model", "head")
         head.load_state_dict(torch.load(path_to_head))
 
     if not model_only:
-        path_to_optimizer = path_to_model.replace("model_", "optimizer_")
+        path_to_optimizer = path_to_model.replace("model", "optimizer")
         optimizer.load_state_dict(torch.load(path_to_optimizer))
